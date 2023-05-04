@@ -1,60 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mina:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karantina&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
-<style>
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: auto;
-}
-
-.product-buttons {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  gap: 10px;
-  
-}
-
-.product-button {
-  background-color: #4CAF50;
-  width: 90%;
-  color: white;
-  padding: 15px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.product-button:hover {
-  background-color: #3e8e41;
-}
-
-</style>
 <body>
+    <div class="titulo">
+        <h1>IFMachine</h1>
+    </div>
     <div class="container">
         <div class="product-buttons">
-            <button class="product-button">Produto 1</button>
-            <button class="product-button">Produto 2</button>
+            <button class="product-button">
+                <img src="sementeAlface.png" alt="Salgadinho Doritos Imagem">
+                <div class="product-details">
+                    <h3>Sementes de Alface</h3>
+                    <span> Preço: R$</span>
+                </div>
+                </button>
+            <button class="product-button">
+                <img src="sementeAbobrinha.png" alt="Salgadinho Doritos Imagem">
+                <div class="product-details">
+                    <h3>Sementes de Abobrinha</h3>
+                    <span> Preço: R$</span>
+                </div>
+            </button>
           </div>
     </div>
 </body>
