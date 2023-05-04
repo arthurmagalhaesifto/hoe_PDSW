@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: auto;
+}
+
+.product-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  
+}
+
+.product-button {
+  background-color: #4CAF50;
+  width: 90%;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.product-button:hover {
+  background-color: #3e8e41;
+}
+
+</style>
+<body>
+    <div class="container">
+        <div class="product-buttons">
+            <button class="product-button">Produto 1</button>
+            <button class="product-button">Produto 2</button>
+          </div>
+    </div>
+</body>
+</html>
