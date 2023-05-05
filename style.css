@@ -74,8 +74,12 @@
     line-height: 1.2;
   }
   
-  .product-details span {
+  .product-details span.preco {
     color: #000;
+    font-size: 20px;
+  }
+  .product-details span.valor {
+    color: #3ab738;
     font-size: 20px;
   }
 .product-button:hover {

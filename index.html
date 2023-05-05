@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karantina&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
     <title>Document</title>
 </head>
 
@@ -20,20 +21,23 @@
     </div>
     <div class="container">
         <div class="product-buttons">
-            <button class="product-button">
+            <button class="product-button" onclick="rodar()">
                 <img src="assets/images/sementeAlface.png" alt="Salgadinho Doritos Imagem">
                 <div class="product-details">
-                    <h3>Sementes de Alface</h3>
-                    <span> Preço: R$</span>
+                    <h3 id="semente1">Sementes de Alface</h3>
+                    <span class="preco"> Preço:</span>
+                    <span class="valor">R$ 5,00</span>
                 </div>
                 </button>
             <button class="product-button">
                 <img src="assets/images/sementeAbobrinha.png" alt="Salgadinho Doritos Imagem">
                 <div class="product-details">
                     <h3>Sementes de Abobrinha</h3>
-                    <span> Preço: R$</span>
+                    <span class="preco"> Preço:</span>
+                    <span class="valor">R$ 5,00</span>
                 </div>
             </button>
+            <p id="selecionado"></p>
           </div>
     </div>
 </body>
