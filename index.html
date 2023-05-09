@@ -11,7 +11,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karantina&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function rodar() {
+            $.ajax({
+                url: 'testedois.py',
+                success: function(response) {
+                    console.log('Arquivo Python executado com sucesso!');
+                },
+                error: function(xhr, status, error) {
+                    console.error('Erro ao executar o arquivo Python:', error);
+                }
+            });
+        }
+    </script>
+
     <title>Document</title>
 </head>
 
@@ -21,7 +35,7 @@
     </div>
     <div class="container">
         <div class="product-buttons">
-            <button class="product-button" onclick="rodar()">
+                <button class="product-button" onclick="rodar()">
                 <img src="sementeAlface.png" alt="Salgadinho Doritos Imagem">
                 <div class="product-details">
                     <h3>Sementes de Alface</h3>
@@ -29,7 +43,7 @@
                     <span class="valor">R$ 5,00</span>
                 </div>
                 </button>
-            <button class="product-button">
+                <button class="product-button" onclick="rodar()">
                 <img src="sementeAbobrinha.png" alt="Salgadinho Doritos Imagem">
                 <div class="product-details">
                     <h3>Sementes de Abobrinha</h3>
