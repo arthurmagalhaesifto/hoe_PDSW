@@ -19,3 +19,4 @@ with col2:
    st.image(image2)
    if st.button("COMPRAR Sementas de Abobrinha"):
        st.write("Você clicou no botão!")
+       
