@@ -11,7 +11,7 @@ col1, col2 = st.columns(2)
 with col1:
    st.markdown(texto_negrito1, unsafe_allow_html=True)
    st.image(image1, use_column_width=True)
-   if st.button("OMPRAR Sementas de Alface"):
+   if st.button("COMPRAR Sementas de Alface"):
        st.write("Você clicou no botão!")
 
 with col2:
