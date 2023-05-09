@@ -1,7 +1,8 @@
-import streamlit as st
-from PIL import Image
 import time
 import RPi.GPIO as GPIO
+import streamlit as st
+from PIL import Image
+
 
 GPIO.setmode(GPIO.BCM)
 
