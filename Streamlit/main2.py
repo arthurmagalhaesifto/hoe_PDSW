@@ -93,4 +93,3 @@ if __name__ == '__main__' :
     print("Stop motor")
     for pin in StepPins:
             GPIO.output(pin, False)
-       
