@@ -1,58 +1,9 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mina:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Karantina&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        function rodar() {
-            $.ajax({
-                url: 'testedois.py',
-                success: function(response) {
-                    console.log('Arquivo Python executado com sucesso!');
-                },
-                error: function(xhr, status, error) {
-                    console.error('Erro ao executar o arquivo Python:', error);
-                }
-            });
-        }
-    </script>
-
-    <title>Document</title>
-</head>
-
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/style.css">
+    </head>
 <body>
-    <div class="titulo">
-        <h1>IFMachine</h1>
-    </div>
-    <div class="container">
-        <div class="product-buttons">
-                <button class="product-button" onclick="rodar()">
-                <img src="sementeAlface.png" alt="Salgadinho Doritos Imagem">
-                <div class="product-details">
-                    <h3>Sementes de Alface</h3>
-                    <span class="preco"> Preço:</span>
-                    <span class="valor">R$ 5,00</span>
-                </div>
-                </button>
-                <button class="product-button" onclick="rodar()">
-                <img src="sementeAbobrinha.png" alt="Salgadinho Doritos Imagem">
-                <div class="product-details">
-                    <h3>Sementes de Abobrinha</h3>
-                    <span class="preco"> Preço:</span>
-                    <span class="valor">R$ 5,00</span>
-                </div>
-            </button>
-            <p id="selecionado"></p>
-          </div>
-    </div>
+<h1>My website</h1>
+<a href="/hello/Arthur">Hi Arthur</a>
 </body>
 </html>
