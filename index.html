@@ -4,14 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Motor Control</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mina:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karantina&display=swap" rel="stylesheet">
+    <script src="/static/script.js"></script>
+    <title>Document</title>
 </head>
-<body>
-    <button onclick="runMotor()">Run Motor</button>
 
+<body>
+    <div class="titulo">
+        <h1>IFMachine</h1>
+    </div>
+    <div class="container">
+        <div class="product-buttons">
+            <button class="product-button" onclick="rodarMotor()">
+                <img src="/static/sementeAlface.png" alt="Imagem de semente de alface.">
+                <div class="product-details">
+                    <h3>Sementes de Alface</h3>
+                    <span class="preco"> Preço:</span>
+                    <span class="valor">R$ 5,00</span>
+                </div>
+            </button>
+            <button class="product-button">
+                <img src="/static/sementeAbobrinha.png" alt="Imagem de semente de abrobrinha.">
+                <div class="product-details">
+                    <h3>Sementes de Abobrinha</h3>
+                    <span class="preco"> Preço:</span>
+                    <span class="valor">R$ 5,00</span>
+                </div>
+            </button>
+            <p id="selecionado"></p>
+        </div>
+    </div>
     <script>
-        function runMotor(){
-            fetch('run_motor');
+        function rodarMotor() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("POST", "/", true);
+            xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xhttp.send("steps=2048");
         }
     </script>
 </body>
